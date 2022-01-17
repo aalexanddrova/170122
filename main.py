@@ -1,10 +1,10 @@
-teksts = input("ievadiet tekstu:")
-def replaceTwos(teksts):
-  if teksts.count("2")>0:
-    teksts = teksts.replace("2","divi")
-    print(teksts)
+teksts = input("ievadiet tekstu: ")
+
+def deleteE(text):
+  if text.count("e")>0:
+    text = text.replace("e"," ")
+    text = text.upper()
   else:
-   teksts = "nekas netika aizvietots"
-  print(teksts)
-  return teksts
-replaceTwos(teksts)
+    text = "teksts nesatur vajadzigo burtu."
+  return text
+  print(text)
